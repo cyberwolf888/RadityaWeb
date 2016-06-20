@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3cf423a8-3259-4f2c-8e2f-2ce31318ee24" name="LaporanKeuangan" url="http://localhost/laporankeuangan">
+        <fileTransfer host="ftp.radityadewataperkasa.com" port="21" password="df84dfe7dfeadfc5dfd4dfc7df8cdfccdfdddfcddfcbdfce" username="admin@radityadewataperkasa.com">
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

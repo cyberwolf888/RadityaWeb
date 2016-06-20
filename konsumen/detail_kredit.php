@@ -40,13 +40,11 @@ if(isset($id)){
 </head>
 <body class="canvas-menu">
     <div id="wrapper">
-        
-
         <div id="page-wrapper" class="gray-bg dashbard-1">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class=" btn btn-info " href="index.php"><i class="fa fa-back"></i> </a>
+            <a class=" btn btn-info " href="index.php"><i class="fa fa-back"></i> < back</a>
         </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li>
@@ -70,39 +68,7 @@ if(isset($id)){
                         </li>
                     </ol>
                 </div>
-                <div class="col-lg-4">
-                    <div class="title-action">
-                        <a href="printdt.php" target="_blank" class="btn btn-info"><i class="fa fa-print"></i> Print Detail Kredit </a>
-                    </div>
-                </div>
             </div>
-		
-		<div class="row">
-            <div class="col-lg-12">
-                <div class="wrapper wrapper-content animated fadeInUp" style="padding-bottom: 5px;">
-
-                    <div class="ibox" style="margin-bottom:0px;">
-                        <div class="ibox-title">
-							<h5>Data Customer</h5>
-                        </div>
-						<div class="ibox-content">
-							<div class="row">
-								<div class="col-md-2">Nama</div>
-								<div class="col-md-4"><?= $anggota['nama'] ?></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2">No HP</div>
-								<div class="col-md-4"><?= $anggota['telepon'] ?></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2">Alamat</div>
-								<div class="col-md-4"><?= $anggota['alamat'] ?></div>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </div>
-		</div>
 		<div class="row">
 			<div class="col-lg-12">
                 <div class="wrapper wrapper-content animated fadeInUp" style="padding-bottom: 5px;">

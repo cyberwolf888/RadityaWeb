@@ -4,8 +4,7 @@ include '../config.php';
 if(!isset($_SESSION['type']) || $_SESSION['type']!=3){
 	echo "<script>window.location=('../login1.php')</script>";
 }
-$users = $mysqli->query("select * from users JOIN anggota ON users.id=anggota.id_user where email='".$_SESSION['email']."' ");
-$users = $users->fetch_assoc();
+$users = $mysqli->query("select * from users JOIN anggota ON users.id=anggota.id_user where email='".$_SESSION['email']."' ")->fetch_assoc();
 
 ?>
 <!DOCTYPE html>
@@ -72,7 +71,7 @@ $users = $users->fetch_assoc();
                     </thead>
                     <tbody>
                     <?php
-								$query = $mysqli->query("select kredit.*, barang.nama_barang from kredit JOIN barang ON kredit.id_barang = barang.id where kredit.id_cust='".$users['id']."' ");
+								$query = $mysqli->query("select kredit.*, barang.nama_barang from kredit JOIN barang ON kredit.id_barang = barang.id where kredit.id_cust='".$users['id_anggota']."' ");
 								$no = 1;
 								while($row = $query->fetch_assoc()){		
 								?>	
